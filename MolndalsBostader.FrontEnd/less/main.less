@@ -1,0 +1,70 @@
+// Bootstrap 3.3.7
+// @import 'lib/bootstrap.less';
+// @import 'lib/bootstrap-theme.less';
+
+// #Base
+@import 'base/vars.less';
+@import 'base/bootstrap-overwrite.less';
+
+// #Master
+@import 'partials/_header.less';
+@import 'partials/_footer.less';
+
+// #Pages
+@import 'pages/page.less';
+@import 'pages/mypage.less';
+@import 'pages/press.less';
+@import 'pages/search.less';
+
+// #Sections
+@import 'sections/hero.less'; 
+@import 'sections/card.less';
+@import 'sections/news.less';  
+@import 'sections/action.less';
+ 
+
+// Mina sidor
+.command-button-spinner{
+	display: none;
+}
+.form-section-container .control-label{font-size: 1em;}
+
+.contact .contact__text .h6 {
+    /*font-size: 22px;*/
+    font-size: 2.2rem;
+    margin: 0;
+} 
+
+.news-item .h6{
+    /*font-size: 20px;*/
+    font-size: 2rem;
+    margin: 4px 0;
+}
+
+.button-group li button:focus{
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+} 
+
+.page-content-a a{
+    text-decoration: underline; 
+    letter-spacing: 0.04rem;  
+}
+.meta{
+    color: #595959;
+}
+.news__links{ 
+background-color: white;
+padding: 25px;
+margin-bottom: 5px;
+// -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.07);
+// box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.07);
+padding: 15px!important;
+}
+.footer a:focus{
+    outline: 2px solid white!important;
+}
+
+.browser-firefox a:focus{
+    outline: 2px solid #2264ab; 
+}

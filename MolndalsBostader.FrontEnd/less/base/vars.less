@@ -1,0 +1,72 @@
+/*======================================
+  #General
+======================================*/
+@brand-primary: #db3027;
+@brand-success: #5cb85c;
+@brand-info: 	#3498DB;
+@brand-warning: #f0ad4e;
+@brand-danger: 	#E91818;
+
+@gray-base: 	#000;
+@gray-darken: 	lighten(@gray-base, 13.5%);
+@gray-dark: 	lighten(@gray-base, 20%);
+@gray: 			lighten(@gray-base, 33.5%);
+@gray-light: 	lighten(@gray-base, 46.7%);
+@gray-lighter: 	lighten(@gray-base, 93.5%);
+
+@heading-font: 	"Roboto", sans-serif;
+/*@text-font: 	"Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+@text-font: 	"Lora", sans-serif;
+
+/*======================================
+  #Media queries
+======================================*/
+@m: ~"only screen and (max-width: 992px)";
+@s: ~"only screen and (max-width: 768px)";
+@xs: ~"only screen and (max-width: 480px)";
+
+@min-l: ~"(min-width: 1200px)";
+@min-m: ~"(min-width: 992px)";
+@min-s: ~"(min-width: 768px)";
+@min-xs: ~"(min-width: 480px)";
+
+/*======================================
+  #High density
+======================================*/
+@hd: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+     ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+     ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+     ~"only screen and (min-device-pixel-ratio: 1.5)";
+
+
+/*======================================
+  #Mixins
+======================================*/
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/*======================================
+  #Format Classes
+======================================*/
+.image-left{
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.image-right{
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.image-left, .image-right{
+  display: block;
+  @media @s{ float: none; }
+}
